@@ -64,14 +64,29 @@ public abstract class BaseTest {
         request.setProfile(perfil.getUuid());
         request.setAtivo(ativo);
 
-        Autorizacao authAdmin = this.authAdmin();
-
-        return this.httpClient.post().uri("/api/v1/register")
+        return this.httpClient.post().uri("/api/v1/user/create")
                 .bodyValue(request)
+				.header("Authorization", authAdmin().getToken())
                 .exchange()
                 .expectStatus().isEqualTo(201)
                 .expectBody(UsuarioDTO.class).returnResult().getResponseBody();
     }
+
+	protected Autorizacao registrarUsuario(Perfil perfil, String email, String senha){
+		UsuarioRequest request = new UsuarioRequest();
+
+		request.setUsername(email);
+		request.setNome("Nome " + uuid());
+		request.setPassword(senha);
+		request.setProfile(perfil.getUuid());
+		request.setAtivo(true);
+
+		return this.httpClient.post().uri("/api/v1/register")
+				.bodyValue(request)
+				.exchange()
+				.expectStatus().isEqualTo(201)
+				.expectBody(Autorizacao.class).returnResult().getResponseBody();
+	}
     
     protected UsuarioDTO criarUsuario(Perfil perfil, String email, String senha){
        return criarUsuario(perfil, email, senha, true);
@@ -94,8 +109,7 @@ public abstract class BaseTest {
 	protected Autorizacao authUser() {
 		String email = uuid() + "@teste.com";
 		String senha = uuid();
-		this.criarUsuario(getPerfilAdmin(), email, senha);
-		return  this.autenticar(email,senha);
+		return this.registrarUsuario(getPerfilAdmin(), email, senha);
 	}
 
 	protected Autorizacao authAdmin() {

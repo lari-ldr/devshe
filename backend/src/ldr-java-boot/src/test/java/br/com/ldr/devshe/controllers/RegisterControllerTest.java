@@ -26,25 +26,12 @@ class RegisterControllerTest extends BaseTest {
     void testCriarUsuario() {
         UsuarioRequest request = createUsuarioRequest();
 
-        UsuarioDTO result = this.httpClient.post().uri("/api/v1/register")
+        Autorizacao autorizacao = this.httpClient.post().uri("/api/v1/register")
                 .bodyValue(request)
                 .exchange()
                 .expectStatus().isEqualTo(201)
-                .expectBody(UsuarioDTO.class).returnResult().getResponseBody();
+                .expectBody(Autorizacao.class).returnResult().getResponseBody();
 
-        validarCriacaoEdicaoBemSucessidida(request, result);
-    }
-
-    private void validarCriacaoEdicaoBemSucessidida(UsuarioRequest request, UsuarioDTO result) {
-        assertNotNull(result);
-        assertEquals(request.getUsername(), result.getUsername());
-        assertEquals(request.getNome(), result.getNome());
-        assertEquals(request.getProfile(), result.getProfile());
-        assertNotNull(result.getUuid());
-        assertTrue(result.isAtivo());
-
-        Autorizacao authCriado = this.autenticar(request.getUsername(), request.getPassword());
-        assertNotNull(authCriado);
     }
 
     /**

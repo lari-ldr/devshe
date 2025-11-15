@@ -1,6 +1,7 @@
 package br.com.ldr.devshe.services;
 
-import jakarta.persistence.EntityManager;
+import br.com.ldr.devshe.dto.Autorizacao;
+import br.com.ldr.devshe.dto.Credenciais;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -16,18 +17,18 @@ import br.com.ldr.devshe.repositories.UsuarioRepository;
 
 @Component
 public class UsuarioService {
-	
+
+	private final SecurityService securityService;
 	private final UsuarioRepository usuarioRepository;
 	private final PerfilRepository perfilRepository;
 	private final PasswordEncoder encoder;
-	private final EntityManager entityManager;
 	
 	@Autowired
-	public UsuarioService(UsuarioRepository usuarioRepository, PerfilRepository perfilRepository, PasswordEncoder encoder, EntityManager entityManager) {
-		this.usuarioRepository = usuarioRepository;
+	public UsuarioService(SecurityService securityService, UsuarioRepository usuarioRepository, PerfilRepository perfilRepository, PasswordEncoder encoder) {
+        this.securityService = securityService;
+        this.usuarioRepository = usuarioRepository;
 		this.perfilRepository = perfilRepository;
 		this.encoder = encoder;
-		this.entityManager = entityManager;
 	}
 	
 	private Perfil getPerfil(UsuarioRequest request) {
@@ -64,8 +65,14 @@ public class UsuarioService {
 		novoUsuario.setNome(request.getNome());
 		novoUsuario.setAtivo(request.isAtivo());
 		novoUsuario.setHashSenha(this.encoder.encode(request.getPassword()));
-		
+
 		return usuarioRepository.saveAndFlush(novoUsuario);
+	}
+
+	public Autorizacao createAndAuth(UsuarioRequest request) {
+		create(request);
+		Credenciais credenciais = new Credenciais(request.getUsername(), request.getPassword());
+		return securityService.autenticar(credenciais);
 	}
 	
 	public Usuario update(String uuid, UsuarioRequest request) throws NotFoundError {

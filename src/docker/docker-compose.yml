@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  db:
+    build: ./postgresql
+    container_name: devshe_db
+    ports:
+      - 5432:5432
+  cache:
+    build: ./redis
+    container_name: devshe_redis
+    ports:
+      - 6379:6379

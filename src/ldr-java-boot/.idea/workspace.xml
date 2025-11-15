@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="89937cf7-f473-4520-8d5e-5a00acc92935" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/ldr-java-boot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/postgresql/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/postgresql/scripts/000.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/redis/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/DevSheApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/UtilData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/controllers/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/controllers/BaseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/controllers/EmpresaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/controllers/RegisterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/controllers/ReviewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/controllers/TrabalhoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/controllers/UsuarioController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/domain/AuthLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/domain/BaseDomain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/domain/Empresa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/domain/ListenerRevisao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/domain/Perfil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/domain/Permissao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/domain/Review.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/domain/Revisao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/domain/Trabalho.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/domain/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/dto/Autorizacao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/dto/Credenciais.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/dto/EmpresaRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/dto/EmpresaResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/dto/Erro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/dto/ReviewPublicoEmpresaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/dto/ReviewRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/dto/TrabalhoRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/dto/TrabalhoResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/dto/UsuarioDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/dto/UsuarioRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/exceptions/AccessError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/exceptions/ErrorHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/exceptions/NotFoundError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/exceptions/ServiceError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/integracoes/Integracoes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/repositories/AuthLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/repositories/EmpresaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/repositories/PerfilRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/repositories/PermissaoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/repositories/ReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/repositories/TrabalhoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/repositories/UsuarioRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/security/JWTAuthentication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/security/JWTFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/services/CacheService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/services/ConfigService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/services/EmpresaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/services/ReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/services/SecurityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/services/TrabalhoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/services/UsuarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ldr/devshe/services/cache/RedisCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/roles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/swagger.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ldr/devshe/BaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ldr/devshe/LdrBootApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ldr/devshe/controllers/AuthControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ldr/devshe/controllers/EmpresaControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ldr/devshe/controllers/RegisterControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ldr/devshe/controllers/ReviewControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ldr/devshe/controllers/TrabalhoControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ldr/devshe/controllers/UsuarioControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ldr/devshe/services/SecurityServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wait" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="35IqVSkoNOsrPlxxn3OAHTNHeum" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.All in devshe.executor": "Run",
+    "JUnit.EmpresaControllerTest.executor": "Run",
+    "JUnit.ReviewControllerTest.executor": "Run",
+    "JUnit.ReviewControllerTest.testAtualizarReviewDeOutroUsuario.executor": "Run",
+    "JUnit.UsuarioControllerTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/ldr/labs/devShe/src/ldr-java-boot/pom.xml"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.All in devshe">
+    <configuration name="All in devshe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="devshe" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmpresaControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="devshe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ldr.devshe.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.ldr.devshe.controllers" />
+      <option name="MAIN_CLASS_NAME" value="br.com.ldr.devshe.controllers.EmpresaControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="devshe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ldr.devshe.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.ldr.devshe.controllers" />
+      <option name="MAIN_CLASS_NAME" value="br.com.ldr.devshe.controllers.ReviewControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewControllerTest.testAtualizarReviewDeOutroUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="devshe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ldr.devshe.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.ldr.devshe.controllers" />
+      <option name="MAIN_CLASS_NAME" value="br.com.ldr.devshe.controllers.ReviewControllerTest" />
+      <option name="METHOD_NAME" value="testAtualizarReviewDeOutroUsuario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="devshe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ldr.devshe.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.ldr.devshe.controllers" />
+      <option name="MAIN_CLASS_NAME" value="br.com.ldr.devshe.controllers.UsuarioControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in devshe" />
+        <item itemvalue="JUnit.ReviewControllerTest" />
+        <item itemvalue="JUnit.ReviewControllerTest.testAtualizarReviewDeOutroUsuario" />
+        <item itemvalue="JUnit.EmpresaControllerTest" />
+        <item itemvalue="JUnit.UsuarioControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="89937cf7-f473-4520-8d5e-5a00acc92935" name="Changes" comment="" />
+      <created>1762807957597</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762807957597</updated>
+    </task>
+    <servers />
+  </component>
+</project>
